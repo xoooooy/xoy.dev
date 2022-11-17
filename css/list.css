@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+table tr th.project {
+    width: 25%;
+}
+
+table tr td.project {
+    text-align: center;
+}
+
+table tr th.description {
+    width: 35%;
+}
+
+table tr th.source {
+    width: 20%;
+}
+
+table tr th.download {
+    width: 20%;
+}
