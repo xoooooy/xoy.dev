@@ -20,10 +20,10 @@ html, body {
     margin: 0;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     font-family: Eirian, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color1);
-    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,7 +39,7 @@ a:hover {
     text-decoration: underline;
 }
 
-header hr {
+hr {
     border-color: var(--text-color1);
     border-width: .5px !important;
 }
@@ -60,6 +60,7 @@ header nav ul li a.active {
 }
 
 main {
+    min-height: 100vh;
     width: 90%;
     margin: auto;
 }
@@ -92,8 +93,57 @@ body main ul {
 
 footer {
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 5px 0 5px 0;
+}
+
+@media only screen and (max-width: 810px) {
+    header nav ul li {
+        display: block;
+        margin: 50px 0 50px 0;
+        font-size: 9vw;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    p, table {
+        font-size: 5vw;
+    }
+
+    table {
+        max-width: 100%;
+    }
+
+    table tr th, table tr td {
+        padding: 10px 5px 10px 5px;
+
+    }
+
+    a {
+        font-size: 200%;
+    }
+
+    body main ul {
+        list-style: "> ";
+    }
+
+    ul li {
+        margin: 20px 0px 20px 0;
+        font-size: 5vw;
+    }
+
+    footer {
+        font-size: 7vw;
+    }
+
+    main {
+        width: 95%;
+    }
 }

@@ -1,23 +1,15 @@
-table {
-    width: 100%;
+div.bubble {
+    border: 1px solid var(--text-color1);
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 500px;
+    display: inline-block;
+    margin: 10px;
 }
 
-table tr th.project {
-    width: 25%;
-}
-
-table tr td.project {
-    text-align: center;
-}
-
-table tr th.description {
-    width: 35%;
-}
-
-table tr th.source {
-    width: 20%;
-}
-
-table tr th.download {
-    width: 20%;
+@media only screen and (max-width: 810px) {
+    div.bubble {
+        max-width: 95%;
+    }
 }
